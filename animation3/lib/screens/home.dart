@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:ninja_trips/shared/screenTitle.dart';
-import 'package:ninja_trips/shared/tripList.dart';
+import 'package:animation3/shared/screenTitle.dart';
+import 'package:animation3/shared/tripList.dart';
 
 class Home extends StatefulWidget {
   @override

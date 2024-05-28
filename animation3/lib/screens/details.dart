@@ -1,12 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:ninja_trips/models/Trip.dart';
-import 'package:ninja_trips/shared/heart.dart';
-import 'package:lipsum/lipsum.dart' as lipsum;
+import 'package:animation3/models/Trip.dart';
+import 'package:animation3/shared/heart.dart';
+import 'package:lorem_ipsum/lorem_ipsum.dart'; // Import the package
 
 class Details extends StatelessWidget {
-
   final Trip trip;
-  Details({ @required this.trip });
+  const Details({super.key, required this.trip});
 
   @override
   Widget build(BuildContext context) {
@@ -26,7 +25,7 @@ class Details extends StatelessWidget {
                 height: 360,
                 fit: BoxFit.cover,
                 alignment: Alignment.topCenter,
-              )
+              ),
             ),
             SizedBox(height: 30),
             ListTile(
@@ -35,28 +34,28 @@ class Details extends StatelessWidget {
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
                   fontSize: 20,
-                  color: Colors.grey[800]
-                )
+                  color: Colors.grey[800],
+                ),
               ),
               subtitle: Text(
                 '${trip.nights} night stay for only \$${trip.price}',
-                style: TextStyle(letterSpacing: 1)
+                style: TextStyle(letterSpacing: 1),
               ),
-              trailing: Heart()
+              trailing: Heart(),
             ),
             Padding(
               padding: EdgeInsets.all(18),
               child: Text(
-                lipsum.createText(numParagraphs: 1, numSentences: 3),
+                loremIpsum(paragraphs: 1, words: 30),  // Use the correct function
                 style: TextStyle(
                   color: Colors.grey[600],
-                  height: 1.4
-                )
-              )
+                  height: 1.4,
+                ),
+              ),
             ),
           ],
         ),
-      )
+      ),
     );
   }
 }
