@@ -193,7 +193,7 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
     return Scaffold(
       body: SafeArea(
         child: Container(
-          padding: const EdgeInsets.fromLTRB(0, 50, 0, 0),
+          padding: const EdgeInsets.fromLTRB(0, 350, 0, 0),
           child: AnimatedBuilder(
             animation: _counterClockwiseRotationController,
             builder: (context, child) {
