@@ -14,12 +14,13 @@ class ScreenTitle extends StatelessWidget {
             fontSize: 36, color: Colors.white, fontWeight: FontWeight.bold),
       ),
       tween: Tween<double>(begin: 0, end: 1),
-      duration: Duration(milliseconds: 500),
+      duration: Duration(milliseconds: 1000),
+      curve: Curves.bounceOut,
       builder: (context, value, child) {
         return Opacity(
           opacity: value,
           child: Padding(
-            padding: EdgeInsets.only(top: value * 20),
+            padding: EdgeInsets.only(top: value * 30),
             child: child,
           ),
         );
