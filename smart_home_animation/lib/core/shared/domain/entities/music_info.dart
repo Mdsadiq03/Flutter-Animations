@@ -15,6 +15,6 @@ class Song {
   static const Song defaultSong = Song(
     'I wanna be your slave',
     'MANESKIN',
-    'https://i.ibb.co/bQ65QkD/manesking.jpg',
+    'https://i1.sndcdn.com/artworks-1FUlzqSq0hnQoRMn-sWeyfQ-t1080x1080.jpg',
   );
 }
