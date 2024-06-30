@@ -1,4 +1,4 @@
-# animation3
+# Ninja Trip
 
 A new Flutter project.
 
