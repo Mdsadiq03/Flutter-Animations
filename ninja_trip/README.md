@@ -1,4 +1,5 @@
 # Ninja Trip
 
-A new Flutter project.
-
+- Hero Animation
+- Tween Animation/Sequence
+- Animated List
